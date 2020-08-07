@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/animation/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
+    <title> Car & Dar </title>
+</head>
+
+<body>
+
+    <!-- Header  -->
+    <div class="header internalHeader adsHeader">
+        <!-- Header Top -->
+        <div class="headerTop">
+            <div class="container">
+                <div class="headerTopBox">
+                    <div class="currentDate"> 
+                        <label> توقيت السعودية </label>
+                        <span id="time"> </span>
+                        <span id="date"> </span>
+                    </div>
+                    <div class="social">    
+                        <a href="#"> <i class="icofont-instagram"></i> </a>
+                        <a href="#"> <i class="icofont-twitter"></i> </a>
+                        <a href="#"> <i class="icofont-facebook"></i> </a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header  -->
+        <div class="headerBottom">
+            <div class="container">
+                <div class="headerBottomBox">
+                    <div class="logo">
+                        <a href="index.html"> <img src="images/logo.png" alt="logo" class="img-fluid"> </a>
+                    </div>
+
+                    <!-- Nav Menu  -->
+                    <div class="navMenu">
+                        <ul>
+                            <li> <a href=""> <img src="images/nav-home.png" alt="icon"> الرئيسية </a> </li>
+                            <li> <a href=""> <img src="images/nav-mazad.png" alt="icon"> المزدات </a> </li>
+                            <li> <a href=""> <img src="images/nav-car.png" alt="icon"> طلب سيارة </a> </li>
+                            <li> <a href=""> <img src="images/nav-search.png" alt="icon"> ابحث عن سيارة </a> </li>  
+                            <li> <a href=""> <img src="images/nav-call.png" alt="icon"> تواصل معنا </a> </li>  
+                        </ul>
+                    </div>
+
+                    <div class="leftSide">                    
+                        <!-- Searh  -->
+                        <div class="search">                   
+                            <div class="openSearch btnBlue"> <i class="icofont-search"></i> </div>
+                            <div class="searchPopup"> 
+                                <div class="close"> <i class="icofont-close-line"></i> </div>
+                                <div class="searchForm"> 
+                                    <form action="">
+                                        <div class="searchBox">
+                                            <input type="text" placeholder="ابحث هنا ">
+                                            <button type="submit" class="btnGrey"> <i class="icofont-search"></i>  </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>  
+
+                        <!-- add New Ad -->
+                        <a href="new-ad.html" class="addAd btnBlue"> <img src="images/add.png" alt="icon"> <span> إضافة اعلان </span> </a>
+
+                        <!-- Before Login  -->
+                        <!-- <div class="user dropToggle">
+                            <i class="icofont-simple-down"></i>
+                            <div class="userText"> تسجيل الدخول /جديد </div>
+                            <div class="userIcon"> <img src="images/user.png" alt="icon" class="img-fluid"> </div>
+                            <div class="userList dropList">
+                                <a href="login.html"> تسجيل الدخول </a>
+                                <a href="login.html"> تسجيل جديد </a>
+                            </div> 
+                        </div>   -->
+                        
+                        <!-- After Login  -->
+                        <div class="user dropToggle">
+                            <i class="icofont-simple-down"></i>
+                            <div class="userText"> Hossam Hilal </div>
+                            <div class="userIcon"> <img src="images/user.png" alt="icon" class="img-fluid"> </div>
+                            <div class="userList dropList">
+                                <a href="profile.html"> حسابي </a>
+                                <a href="profile-ads.html"> اعلاناتى  <span> 5 </span></a>
+                                <a href="profile-notifications.html"> اشعارات <span> 10 </span></a>
+                                <a href="index.html"> تسجيل الخروج </a>
+                            </div> 
+                        </div>   
+
+                        <!-- Mobile  -->
+                        <div class="mobile">
+                            <div class="menuBtn"> <span></span> <span></span> <span></span> </div>
+                            <div class="navOverlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Info  -->
+        <div class="pageInfo">
+            <h1> اعلاناتى  </h1>
+        </div>
+    </div>
+
+    <!-- Profile Ads  -->
+    <div class="profileAdsPage secPadding">
+        <div class="container">
+            <div class="loginTabs tabsTheme">
+                <a href="#tabContent1" class="loginTab active"> إعلانات شراء مباشر </a>
+                <a href="#tabContent2" class="loginTab"> إعلانات مزايدة </a>
+            </div>
+            <div class="tabsContent">
+                <div class="tabContent show" id="tabContent1"> 
+                    <!-- Single Ad  -->
+                    <div class="ad buyAd profileBuyAd">
+                        <div class="row">
+                            <div class="col-12 col-sm-3"> 
+                                <div class="adSlider">
+                                    <div class="owl-carousel owl-theme owlAdImages">
+                                        <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-2.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                    </div>
+                                    <div class="adSliderHover">
+                                        <div class="imagesCount"> <span class="ImgCountNumber"></span> <img src="images/image.png" alt="icon"> </div>
+                                        <div class="sliderNav">
+                                            <div class="prev"> <i class="icofont-thin-right"></i> </div>
+                                            <div class="next"> <i class="icofont-thin-left"></i> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6"> 
+                                <div class="adBody">
+                                    <h2> مرسيدس جى 63 2016 </h2>
+                                    <p> تخضع لموافقة المورد - مواصفات خليجية - يتم بيع المعروض علي وضعه الراهن وفي مكانه الحالي - مكيف الهواء - وسائد هوائية - قفل مركزي - نظام تثبيت السرعة - مقاعد كهربائية - نظام هاتف داخلي - مقاعد جلدية - مقود   <a href="profile-buyAd.html">  المزيد </a> </p>
+                                    <div class="buyAdFooter">
+                                        <h5> 2000 ريال </h5>
+                                        <div> <img src="images/distance.png" alt="icon">  <span> km 1234 </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3"> 
+                                <div class="adActions">
+                                    <a href="profile-buyAd-edit.html" class="btnBlue"> تعديل </a>
+                                    <a href="#" class="btnRed deleteAd"> حذف </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Ad  -->
+                    <div class="ad buyAd profileBuyAd">
+                        <div class="row">
+                            <div class="col-12 col-sm-3"> 
+                                <div class="adSlider">
+                                    <div class="owl-carousel owl-theme owlAdImages">
+                                        <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-2.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                    </div>
+                                    <div class="adSliderHover">
+                                        <div class="imagesCount"> <span class="ImgCountNumber"></span> <img src="images/image.png" alt="icon"> </div>
+                                        <div class="sliderNav">
+                                            <div class="prev"> <i class="icofont-thin-right"></i> </div>
+                                            <div class="next"> <i class="icofont-thin-left"></i> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6"> 
+                                <div class="adBody">
+                                    <h2> مرسيدس جى 63 2016 </h2>
+                                    <p> تخضع لموافقة المورد - مواصفات خليجية - يتم بيع المعروض علي وضعه الراهن وفي مكانه الحالي - مكيف الهواء - وسائد هوائية - قفل مركزي - نظام تثبيت السرعة - مقاعد كهربائية - نظام هاتف داخلي - مقاعد جلدية - مقود   <a href="profile-buyAd.html">  المزيد </a> </p>
+                                    <div class="buyAdFooter">
+                                        <h5> 2000 ريال </h5>
+                                        <div> <img src="images/distance.png" alt="icon">  <span> km 1234 </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3"> 
+                                <div class="adActions">
+                                    <a href="profile-buyAd-edit.html" class="btnBlue"> تعديل </a>
+                                    <a href="#" class="btnRed deleteAd"> حذف </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabContent" id="tabContent2"> 
+                    <!-- Single Ad  -->
+                    <div class="ad mazadAd profileMazadAd">
+                        <div class="row">
+                            <div class="col-12 col-sm-3"> 
+                                <div class="adSlider">
+                                    <div class="owl-carousel owl-theme owlAdImages">
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-2.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                    </div>
+                                    <div class="adSliderHover">
+                                        <div class="imagesCount"> <span class="ImgCountNumber"></span> <img src="images/image.png" alt="icon"> </div>
+                                        <div class="sliderNav">
+                                            <div class="prev"> <i class="icofont-thin-right"></i> </div>
+                                            <div class="next"> <i class="icofont-thin-left"></i> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6"> 
+                                <div class="adBody">
+                                    <div class="mazadAdHead">
+                                        <h2> مرسيدس جى 63 2016 </h2>
+                                        <h5> <i class="icofont-clock-time"></i> ‏2 ساعه 25 د 30 ث </h5>
+                                        <h6> <img src="images/distance.png" alt="icon"> km 1234 </h6>
+                                    </div>
+                                    <p> تخضع لموافقة المورد - مواصفات خليجية - يتم بيع المعروض علي وضعه الراهن وفي مكانه الحالي - مكيف الهواء - وسائد هوائية - قفل مركزي - نظام تثبيت السرعة - مقاعد كهربائية - نظام هاتف داخلي - مقاعد جلدية - مقود   <a href="product.html">  المزيد </a> </p>
+                                    <div class="mazadAdFooter">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="AdFooterBlock"> <label> التسلسل </label>  <span> 3526425418 </span> </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="AdFooterBlock"> <label> الحد الأدنى للمزايدة </label>  <span> ‏1500 ريال </span> </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="AdFooterBlock"> <label> عدد المزايدات </label>  <span> 20 </span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3"> 
+                                <div class="adActions">
+                                    <div class="btnOpacity">
+                                        <h4> سعر المزايدة الحالى</h4>
+                                        <h5> 2000 ريال </h5>
+                                    </div>
+                                    <div class="profileMazadAdActions">
+                                        <a href="profile-mazadAd-edit.html" class="btnBlue"> تعديل </a>
+                                        <a href="#" class="btnRed deleteAd"> حذف </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Ad  -->
+                    <div class="ad mazadAd profileMazadAd">
+                        <div class="row">
+                            <div class="col-12 col-sm-3"> 
+                                <div class="adSlider">
+                                    <div class="owl-carousel owl-theme owlAdImages">
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-2.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
+                                        <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                    </div>
+                                    <div class="adSliderHover">
+                                        <div class="imagesCount"> <span class="ImgCountNumber"></span> <img src="images/image.png" alt="icon"> </div>
+                                        <div class="sliderNav">
+                                            <div class="prev"> <i class="icofont-thin-right"></i> </div>
+                                            <div class="next"> <i class="icofont-thin-left"></i> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6"> 
+                                <div class="adBody">
+                                    <div class="mazadAdHead">
+                                        <h2> مرسيدس جى 63 2016 </h2>
+                                        <h5> <i class="icofont-clock-time"></i> ‏2 ساعه 25 د 30 ث </h5>
+                                        <h6> <img src="images/distance.png" alt="icon"> km 1234 </h6>
+                                    </div>
+                                    <p> تخضع لموافقة المورد - مواصفات خليجية - يتم بيع المعروض علي وضعه الراهن وفي مكانه الحالي - مكيف الهواء - وسائد هوائية - قفل مركزي - نظام تثبيت السرعة - مقاعد كهربائية - نظام هاتف داخلي - مقاعد جلدية - مقود   <a href="product.html">  المزيد </a> </p>
+                                    <div class="mazadAdFooter">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="AdFooterBlock"> <label> التسلسل </label>  <span> 3526425418 </span> </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="AdFooterBlock"> <label> الحد الأدنى للمزايدة </label>  <span> ‏1500 ريال </span> </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="AdFooterBlock"> <label> عدد المزايدات </label>  <span> 20 </span> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3"> 
+                                <div class="adActions">
+                                    <div class="btnOpacity">
+                                        <h4> سعر المزايدة الحالى </h4>
+                                        <h5> 2000 ريال </h5>
+                                    </div>
+                                    <div class="profileMazadAdActions">
+                                        <a href="profile-mazadAd-edit.html" class="btnBlue"> تعديل </a>
+                                        <a href="#" class="btnRed deleteAd"> حذف </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clients -->
+    <div class="clients secPadding">
+        <div class="container">
+            <div class="owl-carousel owl-theme owlClients wow fadeInUp">
+                <div class="item">
+                    <div class="clients">
+                        <img src="images/client-1.png" alt="partner" class="img-fluid">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="clients">
+                        <img src="images/client-2.png" alt="partner" class="img-fluid">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="clients">
+                        <img src="images/client-3.png" alt="partner" class="img-fluid">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="clients">
+                        <img src="images/client-5.png" alt="partner" class="img-fluid">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="clients">
+                        <img src="images/client-6.png" alt="partner" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 wow fadeInUp">
+                    <div class="logo">
+                        <a href="index.html"> <img src="images/logoFooter.png" alt="logo" class="img-fluid"> </a>
+                    </div>
+                    <p> "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب. </p>
+                    <p> قصف المسرح واستمر الإتحاد في, ذات أسيا للغزو، الخطّة و, الآخر لألمانيا جهة بل. في سحقت هيروشيما البريطاني يتم, غريمه باحتلال الأيديولوجية، في فصل, دحر وقرى لهيمنة الإيطالية ٣٠. استبدال استسلام القاذفات عل مما. ببعض مئات وبلجيكا، قد أما, قِبل الدنمارك حتى كل, العمليات اليابانية انه  </p>            
+                    <div class="downloadApp">
+                        <p> حمل التطبيق الان </p>
+                        <div class="dowloadBox">
+                            <a class="store" href="#"> GOOGLE PLAY <img src="images/playStore.png" alt="icon"> </a>
+                            <a class="store" href="#"> APP STORE <i class="icofont-brand-apple"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 wow fadeInUp">
+                    <div class="footerBlocks">
+                        <div class="footerBlock">
+                            <h3> اهم الروابط </h3>
+                            <div class="list">
+                                <a href="#"> الرئيسية </a>
+                                <a href="#"> تعرف علينا </a>
+                                <a href="#"> الخدمات </a>
+                                <a href="#"> ابحث عن سيارة </a>
+                                <a href="#"> تواصل معنا </a>
+                            </div>
+                        </div>
+                        <div class="footerBlock">
+                            <h3> الدعم والمساعدة </h3>
+                            <div class="list">
+                                <a href="#"> هل نسيت كلمة المرور </a>
+                                <a href="#"> الأسئلة المتكررة </a>
+                                <a href="#"> التسجيل </a>
+                                <a href="#"> المزايدة </a>
+                            </div>
+                            <div class="social">    
+                                <a href="#"> <i class="icofont-instagram"></i> </a>
+                                <a href="#"> <i class="icofont-twitter"></i> </a>
+                                <a href="#"> <i class="icofont-facebook"></i> </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 wow fadeInUp">
+                    <h3> المزادات </h3>
+                    <ul>
+                        <li> <a href="#"> المركبات والمعدات </a></li>
+                        <li> <a href="#"> المركبات والمعدات </a></li>
+                        <li> <a href="#"> ارقام اتصالات المميزه </a></li>
+                        <li> <a href="#"> ارقام اتصالات المميزه </a></li>
+                        <li> <a href="#"> مزاد الرياض </a></li>
+                        <li> <a href="#"> مزاد الرياض </a></li>
+                        <li> <a href="#"> مزاد جده </a></li>
+                        <li> <a href="#"> مزاد جده </a></li>
+                        <li> <a href="#"> النشرة البريدية </a></li>
+                    </ul>
+
+                    <div class="newsLetter">
+                        <form action="">
+                            <input type="text" placeholder="اكتب بريدك الالكترونى ليصلك كل جديد">
+                            <button type="submit" class="btnDarkBlue"> <img src="images/newsletter.png" alt="icon"> </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright  -->
+    <div class="copyright wow fadeInUp">
+        <div class="container">
+            <p> جميع الحقوق محفوظة لموقع <a href="#"> <img src="images/logoBlue.png" alt="logo" class="img-fluid"> </a></p>
+            <p> تصميم وبرمجة <a href="#"> كيان الرقمية </a> </p>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/animation/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
