@@ -371,14 +371,14 @@ button:focus {
     font-size: 20px;
 }
 
-.headerBottom .addAd {
+.headerBottom .addProduct {
     border-radius: 25px;
     height: 45px;
     padding: 0 30px;
     font-size: 12px;
 }
 
-.headerBottom .addAd img {
+.headerBottom .addProduct img {
     width: 22px;
     display: none;
 }
@@ -637,17 +637,17 @@ button:focus {
         padding-top: 10px;
     }
 
-    .headerBottom .addAd span {
+    .headerBottom .addProduct span {
         display: none;
     }
 
-    .headerBottom .addAd img {
+    .headerBottom .addProduct img {
         display: block;
     }
 
     .user .userIcon,
     .openSearch,
-    .headerBottom .addAd {
+    .headerBottom .addProduct {
         height: 35px;
         width: 35px;
         border-radius: 50%;
@@ -748,15 +748,15 @@ button:focus {
         display: flex;
     }
 
-    .headerBottom .addAd span {
+    .headerBottom .addProduct span {
         display: block;
     }
 
-    .headerBottom .addAd img {
+    .headerBottom .addProduct img {
         display: none;
     }
 
-    .headerBottom .addAd {
+    .headerBottom .addProduct {
         height: 35px;
         width: 100px;
         border-radius: 25px;
@@ -886,19 +886,19 @@ button:focus {
     padding: 40px 0 0 0;
 }
 
-.topAd {
+.topItem {
     background: var(--opacityColor);
     margin-bottom: 30px;
 }
 
-.topAdHead {
+.topItemHead {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: var(--mainColor);
 }
 
-.topAd span {
+.topItem span {
     background: var(--red);
     width: 100px;
     padding: 10px 10px;
@@ -912,7 +912,7 @@ button:focus {
     text-transform: uppercase;
 }
 
-.topAd span::before {
+.topItem span::before {
     content: '';
     border-top: 0px solid transparent;
     border-left: 100px solid var(--mainColor);
@@ -922,7 +922,7 @@ button:focus {
     top: 0;
 }
 
-.topAd span::after {
+.topItem span::after {
     content: '';
     border-top: 7px solid transparent;
     border-left: 100px solid var(--mainColor);
@@ -932,7 +932,7 @@ button:focus {
     bottom: 0;
 }
 
-.topAd h2 {
+.topItem h2 {
     color: var(--white);
     font-size: 14px;
     line-height: 30px;
@@ -941,19 +941,19 @@ button:focus {
     font-weight: bold;
 }
 
-.topAdBody {
+.topItemBody {
     display: flex;
     align-items: center;
     padding: 15px;
 }
 
-.topAdBody img {
+.topItemBody img {
     width: 97px;
     height: 67px;
     margin-right: 15px;
 }
 
-.topAdBody p {
+.topItemBody p {
     color: var(--mainColor);
     font-size: 11px;
     font-weight: 600;
@@ -965,34 +965,34 @@ button:focus {
         padding: 15px 0 0;
     }
 
-    .topAd {
+    .topItem {
         margin-bottom: 15px;
     }
 
-    .topAd h2 {
+    .topItem h2 {
         font-size: 11px;
         padding: 0 10px;
     }
 
-    .topAd span {
+    .topItem span {
         font-size: 9px;
         width: 75px;
     }
 
-    .topAd span::before,
-    .topAd span::after {
+    .topItem span::before,
+    .topItem span::after {
         border-left-width: 75px;
     }
 
-    .topAdBody {
+    .topItemBody {
         padding: 10px;
     }
 
-    .topAdBody p {
+    .topItemBody p {
         font-size: 9px;
     }
 
-    .topAdBody img {
+    .topItemBody img {
         width: 75px;
         margin-right: 5px;
     }
@@ -1012,7 +1012,7 @@ button:focus {
 /*==========================||           Services        ||========================*/
 /*==========================||---------------------------||========================*/
 
-.adsFilter {
+.productsFilter {
     background: var(--grey);
     padding: 30px;
     display: flex;
@@ -1038,23 +1038,23 @@ button:focus {
     opacity: 1;
 }
 
-.adsTabs {
+.productsTabs {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.adsTab {
+.productsTab {
     display: flex;
     align-items: center;
     margin-left: 40px;
 }
 
-.adsTab:hover {
+.productsTab:hover {
     color: var(--red);
 }
 
-.adsTab .icon {
+.productsTab .icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1065,7 +1065,7 @@ button:focus {
     background: var(--white);
 }
 
-.adsTab h3 {
+.productsTab h3 {
     color: var(--textDark);
     font-size: 12px;
     line-height: 30px;
@@ -1073,13 +1073,13 @@ button:focus {
     margin: 0 12px;
 }
 
-.adsTab p {
+.productsTab p {
     color: var(--textDark);
     font-size: 12px;
     line-height: 30px;
 }
 
-.adsTab span {
+.productsTab span {
     line-height: 30px;
     font-size: 12px;
     font-weight: bold;
@@ -1087,22 +1087,23 @@ button:focus {
 }
 
 @media screen and (max-width:767px) {
-    .adsFilter {
+    .productsFilter {
         padding: 15px;
         flex-direction: column;
     }
 
     .showOptions {
         margin-bottom: 20px;
+        display: none;
     }
 
-    .adsTab {
+    .productsTab {
         margin: 0 0 10px 0;
     }
 }
 
 @media (min-width:768px) and (max-width:992px) {
-    .adsFilter {
+    .productsFilter {
         padding: 15px;
     }
 
@@ -1111,7 +1112,7 @@ button:focus {
         margin-left: 20px;
     }
 
-    .adsTab {
+    .productsTab {
         margin-left: 20px;
         margin-bottom: 10px;
     }
@@ -1119,7 +1120,7 @@ button:focus {
 
 
 @media (min-width:1024px) and (max-width:1250px) {
-    .adsFilter {
+    .productsFilter {
         padding: 20px;
     }
 
@@ -1127,11 +1128,11 @@ button:focus {
         margin-left: 20px;
     }
 
-    .adsTab {
+    .productsTab {
         margin-left: 20px;
     }
 
-    .adsTab:last-of-type {
+    .productsTab:last-of-type {
         margin: 0;
     }
 }
@@ -1145,19 +1146,10 @@ button:focus {
 }
 
 .tabContent {
-    /* opacity: 0;
-    visibility: hidden;
-    height: 0;
-    transition: all .5s ease-in-out;
-    transform: translateY(30px); */
     display: none;
 }
 
 .tabContent.show {
-    /* opacity: 1;
-    visibility: visible;
-    height: auto;
-    transform: translateY(0); */
     display: block;
 }
 
@@ -1165,11 +1157,11 @@ button:focus {
     display: flex;
 }
 
-.ad {
+.product{
     padding-bottom: 30px;
 }
 
-.adBody {
+.productBody {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1179,7 +1171,7 @@ button:focus {
     padding: 25px;
 }
 
-.adBody h2 {
+.productBody h2 {
     font-size: 12px;
     line-height: 30px;
     font-weight: bold;
@@ -1187,7 +1179,7 @@ button:focus {
     margin-bottom: 10px;
 }
 
-.adBody p {
+.productBody p {
     font-size: 13px;
     line-height: 30px;
     font-weight: 400;
@@ -1195,19 +1187,19 @@ button:focus {
     min-height: 110px;
 }
 
-.adBody p a {
+.productBody p a {
     color: var(--mainColor);
     margin-right: 10px;
     font-weight: 600;
 }
 
-.buyAdFooter {
+.buyProductFooter {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.buyAdFooter span {
+.buyProductFooter span {
     padding: 0 10px;
     line-height: 30px;
     font-size: 12px;
@@ -1243,13 +1235,13 @@ button:focus {
     transform: translateY(-26px);
 }
 
-.adActions {
+.productActions {
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.adActions>* {
+.productActions>* {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1257,50 +1249,50 @@ button:focus {
     height: 50%;
 }
 
-.adActions .btnOpacity {
+.productActions .btnOpacity {
     background: var(--opacityColor);
 }
 
-.adActions h4 {
+.productActions h4 {
     font-size: 12px;
     line-height: 30px;
     color: var(--textDark);
     margin-bottom: 15px;
 }
 
-.adActions .btnOpacity h5 {
+.productActions .btnOpacity h5 {
     font-size: 13px;
     line-height: 30px;
     color: var(--mainColor);
     font-weight: bold;
 }
 
-.adActions .btnWhite,
-.adActions .btnRed,
-.adActions .btnBlue {
+.productActions .btnWhite,
+.productActions .btnRed,
+.productActions .btnBlue {
     font-size: 12px;
     font-weight: bold;
 }
 
-.adSlider {
+.productSlider {
     position: relative;
     height: 295px;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.adSlider .item {
+.productSlider .item {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 295px;
 }
 
-.adSlider img {
+.productSlider img {
     width: 100%;
 }
 
-.adSliderHover {
+.productSliderHover {
     position: absolute;
     top: 0;
     left: 0;
@@ -1315,7 +1307,7 @@ button:focus {
     color: var(--white);
 }
 
-.adSliderHover img {
+.productSliderHover img {
     width: 27px;
     height: 27px;
     margin-right: 3px;
@@ -1356,21 +1348,21 @@ button:focus {
     background: var(--mainColor);
 }
 
-.mazadAd .adBody {
+.mazadProduct .productBody {
     padding-bottom: 0;
 }
 
-.mazadAd .addToFav {
+.mazadProduct .addToFav {
     margin: -20px auto 10px 0;
 }
 
-.mazadAdHead {
+.mazadProductHead {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.mazadAdHead h5 {
+.mazadProductHead h5 {
     font-size: 12px;
     line-height: 30px;
     color: var(--red);
@@ -1378,38 +1370,38 @@ button:focus {
     font-weight: bold;
 }
 
-.mazadAdHead h5 i {
+.mazadProductHead h5 i {
     color: var(--mainColor);
     font-size: 15px;
     margin-left: 5px;
 }
 
-.mazadAdHead h6 {
+.mazadProductHead h6 {
     margin-bottom: 0;
     font-size: 12px;
     line-height: 30px;
     font-weight: bold;
 }
 
-.mazadAdHead img {
+.mazadProductHead img {
     max-width: 14px;
     margin-left: 2px;
 }
 
-.mazadAdFooter .row {
+.mazadProductFooter .row {
     margin: 0 -25px;
 }
 
-.mazadAdFooter .col-4 {
+.mazadProductFooter .col-4 {
     border-top: 2px solid var(--white);
 }
 
-.mazadAdFooter .col-4:nth-child(2) {
+.mazadProductFooter .col-4:nth-child(2) {
     border: 2px solid var(--white);
     border-width: 2px 2px 0 2px;
 }
 
-.AdFooterBlock {
+.productFooterBlock {
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -1417,14 +1409,14 @@ button:focus {
     justify-content: center;
 }
 
-.AdFooterBlock label {
+.productFooterBlock label {
     font-size: 10px;
     line-height: 30px;
     font-weight: bold;
     margin: 0;
 }
 
-.AdFooterBlock span {
+.productFooterBlock span {
     font-size: 12px;
     line-height: 30px;
     font-weight: 700;
@@ -1439,159 +1431,163 @@ button:focus {
     max-width: 100%;
 }
 
-.gridItem .adSlider {
+.gridItem .productSlider {
     height: 300px;
     margin-bottom: 20px;
 }
 
-.gridItem .adSlider .item>img {
+.gridItem .productSlider .item>img {
     height: 300px;
 }
 
-.gridItem .adBody {
+.gridItem .productBody {
     border-radius: 10px 10px 0 0;
 }
 
-.gridItem .adActions {
+.gridItem .productActions {
     display: flex;
     margin-top: 4px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
 }
 
-.gridItem .adActions>* {
+.gridItem .productActions>* {
     width: 50%;
     height: 100px;
 }
 
 @media screen and (max-width:767px) {
-    .adSlider {
+    .productSlider {
         border-radius: 10px 10px 0 0;
         height: 200px;
     }
 
-    .adSlider .item {
+    .productSlider .item {
         height: 200px;
     }
 
-    .adBody {
+    .productBody {
         padding: 15px;
         height: auto;
         border-radius: 0;
     }
 
-    .adBody h2 {
+    .productBody h2 {
         margin: 0;
     }
 
-    .adBody p {
+    .productBody p {
         font-size: 11px;
         line-height: 22px;
         margin-bottom: 10px;
     }
 
-    .adActions>* {
+    .productActions>* {
         height: 60px;
         width: 50%;
     }
 
-    .adActions {
+    .productActions {
         display: flex;
         border-radius: 0 0 10px 10px;
         border-top: 2px solid var(--white);
     }
 
-    .adActions h4 {
+    .productActions h4 {
         margin: 0;
         font-size: 10px;
     }
 
-    .adActions .btnOpacity h5 {
+    .productActions .btnOpacity h5 {
         font-size: 11px;
         line-height: 24px;
         margin: 0;
     }
 
-    .mazadAdHead {
+    .mazadProductHead {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .mazadAdHead h5 {
+    .mazadProductHead h5 {
         margin: 0;
     }
 
-    .mazadAdFooter .row {
+    .mazadProductFooter .row {
         margin: 0 -15px;
         border-top: 2px solid var(--white);
     }
 
-    .mazadAdFooter .col-4 {
+    .mazadProductFooter .col-4 {
         padding: 0 5px;
     }
 
-    .mazadAdFooter .col-4:nth-child(1) {
+    .mazadProductFooter .col-4:nth-child(1) {
         border-left: 2px solid var(--white);
         border-top: 0;
     }
 
-    .mazadAdFooter .col-4:nth-child(2) {
+    .mazadProductFooter .col-4:nth-child(2) {
         border: 0;
     }
 
-    .mazadAdFooter .col-4:nth-child(3) {
+    .mazadProductFooter .col-4:nth-child(3) {
         border-right: 2px solid var(--white);
         border-top: 0;
     }
 
-    .AdFooterBlock label {
+    .productFooterBlock label {
         font-size: 9px;
         line-height: 20px;
     }
 
-    .AdFooterBlock span {
+    .productFooterBlock span {
         font-size: 10px;
         line-height: 20px;
     }
 }
 
 @media (min-width:767px) and (max-width:992px) {
-    .ad .row {
+    .product .row {
         margin: 0 -25px;
     }
 
-    .ad .col-12 {
+    .product .col-12 {
         padding: 0 5px;
     }
 
-    .adBody {
+    .productBody {
         padding: 10px;
     }
 
-    .adBody p {
+    .productBody p {
         font-size: 11px;
         line-height: 24px;
         margin-bottom: 10px;
     }
 
-    .ad.buyAd .adSlider {
+    .product.buyProduct .productSlider {
         height: 220px;
     }
 
-    .mazadAdHead {
+    .mazadProductHead {
         flex-wrap: wrap;
     }
 
-    .mazadAdHead h5 {
+    .mazadProductHead h5 {
         margin: 0 10px;
     }
 
-    .mazadAdHead h2 {
+    .mazadProductHead h2 {
         margin: 0;
+    }
+  
+    .gridItem {
+        padding: 0 25px 15px;
     }
 }
 
 @media (min-width:1024px) {
-    .AdFooterBlock label {
+    .productFooterBlock label {
         font-size: 11px;
     }
 }
@@ -1605,6 +1601,7 @@ button:focus {
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px 0;
+    width: 100%;
 }
 
 .pagination a {
@@ -2874,39 +2871,39 @@ button:focus {
     margin: 0;
 }
 
-.profileBuyAd .adBody {
+.profileBuyProduct .productBody {
     height: auto;
 }
 
-.profileBuyAd p {
+.profileBuyProduct p {
     margin: 0;
 }
 
-.buyAdFooter h5 {
+.buyProductFooter h5 {
     font-size: 12px;
     color: var(--mainColor);
     font-weight: 600;
     margin: 0;
 }
 
-.profileBuyAd .adActions {
+.profileBuyProduct .productActions {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.profileBuyAd .adActions>* {
+.profileBuyProduct .productActions>* {
     border-radius: 10px;
     height: 90px;
     width: 100%;
 }
 
-.profileMazadAdActions {
+.profileMazadProdActions {
     flex-direction: row;
 }
 
-.profileMazadAdActions>* {
+.profileMazadProdActions>* {
     width: 50%;
     height: 100%;
 }
@@ -2922,30 +2919,30 @@ button:focus {
         font-size: 10px;
     }
 
-    .profileBuyAd .adActions {
+    .profileBuyProduct .productActions {
         flex-direction: row;
     }
 
-    .profileBuyAd .adActions>* {
+    .profileBuyProduct .productActions>* {
         border-radius: 0;
     }
 }
 
 @media (min-width:768px) and (max-width: 992px) {
-    .profileBuyAd .adActions {
+    .profileBuyProduct .productActions {
         flex-direction: column;
     }
 
-    .profileBuyAd .adActions>* {
+    .profileBuyProduct .productActions>* {
         border-radius: 10px;
     }
 
-    .ad.buyAd.profileBuyAd .adSlider,
-    .ad.buyAd.profileBuyAd .adSlider .item {
+    .product.buyProduct.profileBuyProduct .productSlider,
+    .product.buyProduct.profileBuyProduct .productSlider .item {
         height: 200px;
     }
 
-    .profileMazadAd .adSlider {
+    .profileMazadAd .productSlider {
         height: 260px;
     }
 
@@ -2956,8 +2953,8 @@ button:focus {
 
 @media (min-width:1024px) {
 
-    .profileBuyAd .adSlider,
-    .profileBuyAd .adSlider .item {
+    .profileBuyProduct .productSlider,
+    .profileBuyProduct .productSlider .item {
         height: 230px;
     }
 }
@@ -2966,34 +2963,34 @@ button:focus {
 /*==========================||  Direct Selling Ad Page   ||========================*/
 /*==========================||---------------------------||========================*/
 
-.directSellingPage .profileBuyAd {
+.directSellingPage .profileBuyProduct {
     background: var(--opacityColor);
     padding: 25px 30px;
     border-radius: 10px 10px 0px 0px;
     margin-bottom: 30px;
 }
 
-.directSellingPage .adBody {
+.directSellingPage .productBody {
     padding: 0;
 }
 
-.directSellingPage .profileBuyAd p {
+.directSellingPage .profileBuyProduct p {
     min-height: auto;
     margin-bottom: 15px;
 }
 
-.directSellingPage .adActions {
+.directSellingPage .productActions {
     align-items: flex-end;
 }
 
-.directSellingPage .adActions>* {
+.directSellingPage .productActions>* {
     width: 206px;
     max-width: 100%;
     height: 55px;
     border-radius: 28px;
 }
 
-.adPageSliders {
+.productPageSliders {
     margin-bottom: 50px;
 }
 
@@ -3059,11 +3056,11 @@ button:focus {
     height: 100%;
 }
 
-.adPageSlider {
+.productPageSlider {
     padding: 0 55px;
 }
 
-.adPageSlider .item {
+.productPageSlider .item {
     height: 67px;
     background: var(--grey);
     display: flex;
@@ -3071,13 +3068,13 @@ button:focus {
     justify-content: center;
 }
 
-.adPageSlider .item img {
+.productPageSlider .item img {
     max-width: 100%;
     max-height: 100%;
     background: var(--grey);
 }
 
-.adPageSlider .owl-nav>div {
+.productPageSlider .owl-nav>div {
     width: 50px;
     height: 100%;
     display: flex;
@@ -3090,15 +3087,15 @@ button:focus {
     bottom: 0;
 }
 
-.adPageSlider .owl-prev {
+.productPageSlider .owl-prev {
     right: -55px;
 }
 
-.adPageSlider .owl-next {
+.productPageSlider .owl-next {
     left: -55px;
 }
 
-.adPageSlider .owl-nav>div:hover {
+.productPageSlider .owl-nav>div:hover {
     background: var(--mainColor);
     color: var(--white);
 }
@@ -3110,6 +3107,16 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+
+.adDetailsHead::before {
+    content: '';
+    width: 5px;
+    height: 36px;
+    background: var(--red);
+    border-radius: 6px 0px 0px 6px;
+    position: absolute;
 }
 
 .adDetailsHead h3 {
@@ -3226,27 +3233,27 @@ button:focus {
 }
 
 @media screen and (max-width:767px) {
-    .directSellingPage .profileBuyAd {
+    .directSellingPage .profileBuyProduct {
         padding: 0;
     }
 
-    .directSellingPage .adBody {
+    .directSellingPage .productBody {
         padding: 12px;
     }
 
-    .directSellingPage .adActions {
+    .directSellingPage .productActions {
         flex-direction: row;
         padding: 12px;
     }
 
-    .directSellingPage .adActions>* {
+    .directSellingPage .productActions>* {
         width: 120px;
         height: 40px;
     }
 }
 
 @media screen and (max-width:992px) {
-    .directSellingPage .profileBuyAd {
+    .directSellingPage .profileBuyProduct {
         margin-bottom: 20px;
     }
 
@@ -3266,7 +3273,7 @@ button:focus {
         line-height: 25px;
     }
 
-    .adPageSliders {
+    .productPageSliders {
         margin-bottom: 20px;
     }
 
@@ -3336,15 +3343,15 @@ button:focus {
 }
 
 @media (min-width:768px) and (max-width:992px) {
-    .directSellingPage .profileBuyAd {
+    .directSellingPage .profileBuyProduct {
         padding: 15px 30px;
     }
 
-    .directSellingPage .profileBuyAd .row {
+    .directSellingPage .profileBuyProduct .row {
         margin: 0 -15px;
     }
 
-    .directSellingPage .adActions>* {
+    .directSellingPage .productActions>* {
         width: 130px;
         height: 45px;
     }
@@ -3378,51 +3385,51 @@ button:focus {
 /*==========================||     Profile Mazad Page    ||========================*/
 /*==========================||---------------------------||========================*/
 
-.ProfileMazadPage .adBody {
+.ProfileMazadPage .productBody {
     padding-bottom: 0;
 }
 
-.ProfileMazadPage .mazadAdFooter .row {
+.ProfileMazadPage .mazadProductFooter .row {
     border-top: 2px solid var(--white);
 }
 
-.ProfileMazadPage .mazadAdFooter .col-6 {
+.ProfileMazadPage .mazadProductFooter .col-6 {
     border-left: 2px solid var(--white);
 }
 
-.ProfileMazadPage .mazadAdFooter .col-6:last-of-type {
+.ProfileMazadPage .mazadProductFooter .col-6:last-of-type {
     border: 0;
 }
 
 @media screen and (max-width:767px) {
-    .ProfileMazadPage .mazadAdFooter .col-6 {
+    .ProfileMazadPage .mazadProductFooter .col-6 {
         padding: 0 5px;
     }
 
-    .ProfileMazadPage .mazadAdFooter .col-6:nth-child(1) {
+    .ProfileMazadPage .mazadProductFooter .col-6:nth-child(1) {
         border-bottom: 2px solid var(--white);
     }
 
-    .ProfileMazadPage .mazadAdFooter .col-6:nth-child(2) {
+    .ProfileMazadPage .mazadProductFooter .col-6:nth-child(2) {
         border-left: 0;
         border-bottom: 2px solid var(--white);
     }
 }
 
 @media (min-width:768px) and (max-width:992px) {
-    .ProfileMazadPage .mazadAdFooter .col-6 {
+    .ProfileMazadPage .mazadProductFooter .col-6 {
         padding: 0 5px;
     }
 
-    .ProfileMazadPage .AdFooterBlock span {
+    .ProfileMazadPage .productFooterBlock span {
         font-size: 10px;
     }
 
-    .ProfileMazadPage .adDetailsWrapper .row {
+    .ProfileMazadPage .productDetailsWrapper .row {
         margin: 0 -25px;
     }
 
-    .ProfileMazadPage .adDetailsWrapper .col-12 {
+    .ProfileMazadPage .productDetailsWrapper .col-12 {
         padding: 0 5px;
     }
 }
@@ -3542,6 +3549,14 @@ button:focus {
         width: calc(100% - 40px);
     }
 
+    .notificationbody h3 {
+        font-size: 11px;
+    }
+
+    .notificationbody h5 {
+        font-size: 10px;
+    }
+
     .notificationFooter {
         flex-direction: row-reverse;
         align-items: center;
@@ -3550,13 +3565,15 @@ button:focus {
     }
 }
 
-@media screen and (max-width:768px) {
+@media (min-width:576px) and (max-width:768px) {
     .notificationAvatar {
         width: 60px;
         height: 60px;
         margin-left: 0;
     }
+}
 
+@media screen and (max-width:768px) {
     .notificationbody h3 {
         font-size: 12px;
         margin-bottom: 3px;
@@ -4005,7 +4022,6 @@ button:focus {
 }
 
 @media (min-width: 1300px) {
-
     .requestPageHead .container,
     .cars .container {
         max-width: 1140px;
@@ -4013,7 +4029,6 @@ button:focus {
 }
 
 @media (min-width: 1400px) {
-
     .requestPageHead .container,
     .cars .container {
         max-width: 1140px;
@@ -4021,27 +4036,452 @@ button:focus {
 }
 
 /*==========================||---------------------------||========================*/
-/*==========================||          Volunteer        ||========================*/
+/*==========================||     Mazad Product Page    ||========================*/
 /*==========================||---------------------------||========================*/
 
+.fullWidthActions {
+    overflow: hidden;
+}
+
+.fullWidthActions > * {
+    width: 100%;
+    height: 100%;
+}
+
+.relatedSlider {
+    margin-bottom: 50px;
+}
+
+.relatedSlider .item {
+    height: 105px;
+    position: relative;
+    cursor: pointer;
+}
+
+.relatedSlider .relatedHover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--darkOpacity);
+    color: var(--white);
+    padding: 0 5px 7px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: all .3s ease-in-out;
+}
+
+.relatedSlider .item:hover .relatedHover {
+    transform: translateY(0);
+}
+
+.relatedSlider h5 {
+    font-size: 10px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.relatedSlider h6 {
+    font-size: 9px;
+    margin: 0;
+}
+
+.mazadProduct2 .productBody p {
+    min-height: auto;
+}
+
+.mazadProduct2 .buyProductFooter {
+    padding-bottom: 10px;
+}
+
+.recentPrice {
+    display: flex;
+    align-items: center;
+}
+
+.recentPrice label {
+    margin: 0;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+.recentPrice span {
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.mazadInsurance {
+    background: var(--opacityColor);
+    margin: 20px 0 90px;
+    border-radius: 10px;
+    padding: 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mazadInsurance h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 50px;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+.mazadInsurance .btnBlue {
+    width: 230px;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: -30px;
+    box-shadow: 0px 10px 30px #0060C06B;
+}
+
+@media screen and (max-width:767px) {
+    .relatedSlider h5 {
+        font-size: 9px;
+    }
+    
+    .relatedSlider h6 {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mazadProductPage .adDetailsHead h3 {
+        font-size: 9px;
+    }
+
+    .mazadProductPage .adDetailsHead .actions {
+        font-size: 8px;
+    }
+
+    .mazadProductPage .adDetailsHead .actions img {
+        max-width: 8px;
+    }
+
+    .mazadInsurance {
+        padding: 15px 15px 0;
+        margin: 0 0 45px 0;
+    }
+    
+    .mazadInsurance h3 {
+        font-size: 10px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .mazadInsurance .btnBlue {
+        width: 180px;
+        font-size: 11px;
+        height: 40px;
+        margin-bottom: -20px;
+    }
+}
+/*==========================||---------------------------||========================*/
+/*==========================||     Buy Product Page      ||========================*/
+/*==========================||---------------------------||========================*/
+
+.productBuyPage .productBody {
+    padding: 20px;
+    height: auto;
+}
+
+.productBuyPage .productBody p {
+    min-height: auto;
+}
+
+.productBuyPage .fullWidthActions .btnBlue {
+    min-height: 100px;
+}
 
 /*==========================||---------------------------||========================*/
-/*==========================||        Sponsorships       ||========================*/
+/*==========================||      Insurance Page       ||========================*/
 /*==========================||---------------------------||========================*/
 
+.insuranceBox {
+    background: var(--white);
+    padding-top: 75px;
+    box-shadow: 0px 30px 90px #0000000D;
+    border-radius: 20px;
+    margin: -40px 0 40px;
+}
 
+.insuranceBox .loginTabs {
+    max-width: 450px;
+    margin: 0 auto 35px;
+}
+
+.insuranceBox .loginTab {
+    width: 50%;
+    margin: 0;
+    text-align: center;
+}
+
+.insuranceBox .loginTab.active::after, 
+.insuranceBox .loginTab:hover::after {
+    height: 3px;
+}
+
+.bankTransferHead {
+    padding: 0 20px 50px;
+    text-align: center;
+}
+
+.bankTransferHead h3 {
+    font-size: 15px;
+    line-height: 50px;
+    color: var(--mainColor);
+    font-weight: bold;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bank {
+    background: var(--opacityColor);
+    padding: 30px 0;
+}
+
+.bankBlock {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.bank h4 {
+    font-size: 15px;
+    color: var(--textDark);
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.bank h5 {
+    font-size: 15px;
+    color: var(--mainColor);
+    line-height: 23px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.transferForm {
+    padding: 50px 50px 20px;
+}
+
+.transferForm p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.uploadBillBox {
+    height: 45px;
+    border: var(--border);
+    border-radius: 5px;
+    font-size: 13px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.uploadBill {
+    width: 43px;
+    height: 43px;
+    position: relative;
+}
+
+.uploadBill input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.uploadBill label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.billName {
+    width: calc( 100% - 43px );
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.transferForm .field img {
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.transferForm .fieldTwo span {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transferForm .datePicker {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+.transferForm .btnBlue {
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    margin: 40px auto 0;
+}
+
+.paymentCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paymentCard {
+    margin: 0 30px;
+}
+
+.onlineAmout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.onlineAmout .field label {
+    justify-content: center;
+    margin-bottom: 7px;
+}
+
+.onlineAmout .field input {
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .insuranceBox {
+        padding: 15px 0 0;
+    }
+    
+    .insuranceBox .loginTabs {
+        margin: 0 auto;
+    }
+    
+    .bankTransferHead {
+        padding: 0 15px 20px;
+    }
+    
+    .bankTransferHead h3 {
+        line-height: 30px;
+        font-size: 13px;
+    }
+    
+    .bank {
+        padding: 0;
+    }
+    
+    .bankBlock {
+        padding-bottom: 20px;
+        border-bottom: 2px solid var(--white);
+    }
+    
+    .bank h4 {
+        font-size: 13px;
+    }
+    
+    .bank h5 {
+        font-size: 13px;
+    }
+    
+    .transferForm {
+        padding: 12px;
+    }
+    
+    .transferForm p {
+        font-size: 12px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .transferForm .btnBlue {
+        margin: 20px auto 0;
+        font-size: 13px;
+        height: 40px;
+        width: 120px;
+    }
+}
 
 /*==========================||---------------------------||========================*/
-/*==========================||            AR             ||========================*/
+/*==========================||         DatePicker        ||========================*/
 /*==========================||---------------------------||========================*/
 
+.ui-widget-header {
+    background: var(--opacityColor);
+    border: 0;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainColor);
+}
 
+.ui-datepicker .ui-datepicker-title {
+    font-size: 13px;
+}
 
+.ui-state-default, 
+.ui-widget-content .ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button {
+    background: var(--opacityColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-bottom: 3px;
+    border-color: #daeeff;
+}
 
-/*==========================||---------------------------||========================*/
-/*==========================||            Loader        ||========================*/
-/*==========================||---------------------------||========================*/
+.ui-datepicker th {
+    color: var(--mainColor);
+    font-size: 13px;
+}
 
+.ui-state-default:hover {
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+    background: var(--mainColor);
+    color: var(--white) !important;
+    cursor: pointer;
+}
 
 /*==========================||---------------------------||========================*/
 /*==========================||          Volunteer        ||========================*/

@@ -77,10 +77,10 @@
                         </div>  
 
                         <!-- add New Ad -->
-                        <a href="new-ad.html" class="addProduct btnBlue"> <img src="images/add.png" alt="icon"> <span> إضافة اعلان </span> </a>
+                        <!-- <a href="new-ad.html" class="addProduct btnBlue"> <img src="images/add.png" alt="icon"> <span> إضافة اعلان </span> </a> -->
 
                         <!-- Before Login  -->
-                        <div class="user dropToggle">
+                        <!-- <div class="user dropToggle">
                             <i class="icofont-simple-down"></i>
                             <div class="userText"> تسجيل الدخول /جديد </div>
                             <div class="userIcon"> <img src="images/user.png" alt="icon" class="img-fluid"> </div>
@@ -88,20 +88,22 @@
                                 <a href="login.html"> تسجيل الدخول </a>
                                 <a href="login.html"> تسجيل جديد </a>
                             </div> 
-                        </div>  
+                        </div>   -->
                         
                         <!-- After Login  -->
-                        <!-- <div class="user dropToggle">
+                        <div class="user dropToggle">
                             <i class="icofont-simple-down"></i>
-                            <div class="userText"> Hossam Hilal </div>
-                            <div class="userIcon"> <img src="images/user.png" alt="icon" class="img-fluid"> </div>
+                            <div class="userText"> كيان الرقمية  </div>
+                            <div class="userIcon"> <img src="images/binderAvatar.png" alt="icon" class="img-fluid"> </div>
                             <div class="userList dropList">
                                 <a href="profile.html"> حسابي </a>
-                                <a href="profile-ads.html"> اعلاناتى  <span> 5 </span></a>
+                                <a href="profile-ads.html"> المزادات  </a>
+                                <a href="profile-ads.html"> مبالغ التامين </a>
+                                <a href="profile-ads.html"> المفضلة  </a>
                                 <a href="profile-notifications.html"> اشعارات <span> 10 </span></a>
                                 <a href="index.html"> تسجيل الخروج </a>
                             </div> 
-                        </div>    -->
+                        </div>   
 
                         <!-- Mobile  -->
                         <div class="mobile">
@@ -115,125 +117,114 @@
 
         <!-- Page Info  -->
         <div class="pageInfo">
-            <h1> تسجيل  </h1>
+            <h5> مبالغ التامين </h5>
         </div>
     </div>
 
-    <!-- Register Page  -->
-    <div class="loginPage secPadding">
+    <!-- InsurancePage   -->
+    <div class="insurancePage">
         <div class="container">
+            <div class="insuranceBox">
 
-            <!-- Login Tabs  -->
-            <div class="loginTabs">
-                <a href="#login" class="loginTab"> تسجيل الدخول </a> 
-                <a href="#signUp" class="loginTab active">  تسجيل جديد  <span> ( عضو بائع ) </span></a>
-            </div>
-
-            <!-- Login Tabs content  -->
-            <div class="LonginTabsContent">
-                <div class="loginContent" id="login">
-                    <!-- Login Form  -->
-                    <div class="loginForm">
-                        <form action="index.html">
-                            <div class="row">
-                                <!-- Field  -->
-                                <div class="col-12 col-sm-6">
-                                    <div class="field">
-                                        <label> <img src="images/icon-user.png" alt="icon"> اسم المستخدم </label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <!-- Field  -->
-                                <div class="col-12 col-sm-6">
-                                    <div class="field">
-                                        <label> <img src="images/icon-lock.png" alt="icon"> كلمة المرور </label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <!-- Form Links  -->
-                                <div class="col-12 text-center">
-                                    <div class="formLinks">
-                                        <!-- Custom CheckBox   -->
-                                        <div class="CustomCheckBox">
-                                            <div class="custom-control custom-checkbox mr-sm-2">
-                                                <input type="checkbox" class="custom-control-input" id="CustomCheckBox">
-                                                <label class="custom-control-label" for="CustomCheckBox"> تذكرنى </label>
-                                            </div>
-                                        </div>
-                                        <!-- Form Link  -->
-                                        <div class="formLink"> <a href="forgetPass.html"> نسيت كلمة المرور </a></div>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button class="btnBlue" type="submit"> دخول </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="loginTabs">
+                    <a href="#tab1" class="loginTab active"> تحويل بنكى </a> 
+                    <a href="#tab2" class="loginTab"> بطاقة الكترونية </a>
                 </div>
-                <div class="loginContent show" id="signUp">
-                    <!-- Login Form  -->
-                    <div class="loginForm fullWidth">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="field">
-                                        <label> <img src="images/icon-user.png" alt="icon"> الاسم الكامل </label>
-                                        <input type="text" class="form-control">
+
+                <div class="tabsContent">
+                    <div class="tabContent show" id="tab1"> 
+                        <div class="bankTransfer">
+                            <div class="bankTransferHead">
+                                <h3> الرجاء ملاحظة ان الحد الأدنى للتامين المطلوب هو 100 ريال </h3>
+                            </div>
+                            <div class="bank">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <div class="bankBlock"> 
+                                            <h4> اسم الحساب </h4>
+                                            <h5> E CAR & Aqar </h5>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="field">
-                                        <label> <img src="images/icon-envelope.png" alt="icon"> البريد الالكترونى </label>
-                                        <input type="email" class="form-control">
+                                    <div class="col-12 col-sm-4">
+                                        <div class="bankBlock"> 
+                                            <h4> اسم البنك </h4>
+                                            <h5> مصرف الراجحى الاسلامى </h5>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="field fieldTwo">
-                                        <label> <img src="images/icon-call.png" alt="icon"> رقم الجوال </label>
-                                        <input type="text" class="form-control">
-                                        <span> 966+ </span>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="field">
-                                        <label> <img src="images/icon-user.png" alt="icon"> اسم المستخدم </label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="field">
-                                        <label> <img src="images/icon-lock.png" alt="icon"> كلمة المرور  </label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4">
-                                    <div class="field">
-                                        <label> <img src="images/icon-lock.png" alt="icon"> تأكيد كلمة المرور  </label>
-                                        <input type="password" class="form-control">
-                                    </div>
-                                </div>
-                                <!-- Form Links  -->
-                                <div class="col-12 text-center">
-                                    <div class="formLinks">
-                                        <!-- Custom CheckBox   -->
-                                        <div class="CustomCheckBox">
-                                            <div class="custom-control custom-checkbox mr-sm-2">
-                                                <input type="checkbox" class="custom-control-input" id="agree">
-                                                <label class="custom-control-label" for="agree"> أوافق على الشروط والاحكام </label>
-                                            </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="bankBlock"> 
+                                            <h4> رقم الحساب </h4>
+                                            <h5> 1025469854752145</h5>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <button class="btnBlue" type="submit"> تسجيل </button>
-                                </div>
                             </div>
-                        </form>
+                            <div class="transferForm">
+                                <p> بعد استكمال عملية الإيداع يرجى ارسال بيانات الإيداع عن طريق النموذج التالى او ارسال إيصال التحويل على البريد الالكترونى وسيتم مراجعه الطلب واظهارة في الموقع companymail@gmail.com</p>
+                                <form action="product-mazad-live.html">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <div class="field">
+                                                <label> تاريخ التحويل </label>
+                                                <div class="uploadBillBox">
+                                                    <div class="uploadBill"> 
+                                                        <input type="file">
+                                                        <label> <img src="images/icon-cam.png" alt="icon"></label>
+                                                    </div>
+                                                    <div class="billName"> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <div class="field fieldTwo">
+                                                <label> تاريخ التحويل </label>
+                                                <input type="text" class="form-control datePicker">
+                                                <span> <img src="images/icon-calender.png" alt="icon"> </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <div class="field fieldTwo">
+                                                <label> قيمة التحويل </label>
+                                                <input type="text" class="form-control">
+                                                <span> <img src="images/icon-money.png" alt="icon"> </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btnBlue" type="submit"> ارسال </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabContent" id="tab2"> 
+                        <div class="bankTransfer onlinePayment">
+                            <div class="bankTransferHead">
+                                <h3> الرجاء ملاحظة ان الحد الأدنى للتامين المطلوب هو 100 ريال يتم قبول بطاقات الفيزا والماستر كارد وسداد فقط </h3>
+                            </div>
+                            <div class="paymentCards">
+                                <div class="paymentCard"> <img src="images/card-1.png" alt="card" class="img-fluid"> </div>
+                                <div class="paymentCard"> <img src="images/card-2.png" alt="card" class="img-fluid"> </div>
+                                <div class="paymentCard"> <img src="images/card-3.png" alt="card" class="img-fluid"> </div>
+                            </div>
+                            <div class="transferForm">
+                                <p> بعد استكمال عملية الإيداع يرجى ارسال بيانات الإيداع عن طريق النموذج التالى او ارسال إيصال التحويل على البريد الالكترونى وسيتم مراجعه الطلب واظهارة في الموقع companymail@gmail.com</p>
+                                <form action="product-mazad-live.html">
+                                    <div class="onlineAmout">
+                                        <div class="field fieldTwo">
+                                            <label> مبلغ التامين </label>
+                                            <input type="text" class="form-control">
+                                            <span> <img src="images/icon-money.png" alt="icon"> </span>
+                                        </div>
+                                        <button class="btnBlue" type="submit"> الدفع الكترونيا </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-            
         </div>
     </div>
 

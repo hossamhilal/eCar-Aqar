@@ -111,12 +111,12 @@
   
     // Go to the next item
     $('.next').click(function() {
-        $(this).parents('.adSlider').find('.owlAdImages').trigger('next.owl.carousel');
+        $(this).parents('.productSlider').find('.owlAdImages').trigger('next.owl.carousel');
     });
 
     // Go to the previous item
     $('.prev').click(function() {
-        $(this).parents('.adSlider').find('.owlAdImages').trigger('prev.owl.carousel', [300]);
+        $(this).parents('.productSlider').find('.owlAdImages').trigger('prev.owl.carousel', [300]);
     });
 
     // Get Total Count Of Items 
@@ -144,6 +144,32 @@
             },
             600: {
                 items: 4
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+
+    // Related Owl owlRelated
+    $('.owlRelated').owlCarousel({
+        rtl: true ,
+        margin: 10,
+        autoplay: true,
+        loop: true,
+        nav: true,
+        dots: false,
+        center : false ,
+        autoplaySpeed : 1000,
+        autoplayTimeout : 1000,
+        smartSpeed: 1000 ,
+        navText: ["<i class='icofont-thin-right'></i>", "<i class='icofont-thin-left'></i>"],
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 5
             },
             1000: {
                 items: 6
@@ -191,6 +217,10 @@
         $('#activeSlid img').attr('src', ActiveSrc);
     });
 
+    $(document).on('click','.owlAdPage .item', function(){
+        let ActiveSrc = $(this).find('img').attr('src');
+        $('#activeSlid img').attr('src', ActiveSrc);
+    });
 
     // Add To Favourite 
     $('.addToFav').on('click' , function(){
@@ -198,10 +228,10 @@
     });
 
     // Filter List
-    $('.adsTab').on('click' , function(e){
+    $('.productsTab').on('click' , function(e){
         e.preventDefault();
 
-        $('.adsTab').removeClass('active');
+        $('.productsTab').removeClass('active');
         $(this).addClass('active');
         
         var itemId = $(this).attr("href"); 
@@ -211,14 +241,18 @@
 
     // Show Grid 
     $('.showGrid').on('click' , function(){
+        $('.showList').removeClass('active');
+        $(this).addClass('active');
         $('.tabContent.show').addClass('row');
-        $('.tabContent.show .ad').addClass('col-12 col-sm-6 gridItem');
+        $('.tabContent.show .product').addClass('col-12 col-sm-6 gridItem');
         owlAdImages.trigger('refresh.owl.carousel');
     });
 
     $('.showList').on('click' , function(){
+        $('.showGrid').removeClass('active');
+        $(this).addClass('active');
         $('.tabContent.show').removeClass('row');
-        $('.tabContent.show .ad').removeClass('col-12 col-sm-6 gridItem');
+        $('.tabContent.show .product').removeClass('col-12 col-sm-6 gridItem');
         owlAdImages.trigger('refresh.owl.carousel');
     });
 
@@ -277,7 +311,7 @@
     });
 
     // Upload Photo 
-    function readURL(input , place) {
+    function uploadImage(input , place) {
         if (input.files && input.files[0]) {
             let reader = new FileReader();
             reader.onload = function(e) {
@@ -286,14 +320,16 @@
                 preview.html("");
                 let src = e.target.result;
                 let previewImage =  '<img src="'+ src +'"class="img-fluid">';    
-                preview.append(previewImage);        
+                preview.append(previewImage); 
+                console.log(src);       
+                console.log(e.target.result);       
                 preview.fadeIn(650);
             }
             reader.readAsDataURL(input.files[0]);
         }
     }
     $('.uploadImage input').change(function() {
-        readURL(this , $(this).parent().next('.previewBox'));
+        uploadImage(this , $(this).parent().next('.previewBox'));
     });
 
     // Upload Video
@@ -366,6 +402,33 @@
              $(pass).prop('type', 'password');
         }
     });
+
+    // Upload Bill 
+    function uploadBill(input , place) {
+        if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function(e) {
+                let billName = place;
+                billName.hide();
+                billName.html("");
+                let fileName = input.files[0].name;
+                billName.text(fileName);     
+                billName.fadeIn(400);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $('.uploadBill input').change(function() {
+        uploadBill(this , $(this).parent().next('.billName'));
+    });
+
+    // DatePicker
+    $('.datePicker').datepicker();
+
+    $('.datePicker').on('click' , function(){
+        $('.ui-datepicker-prev').html('<i class="icofont-rounded-left"></i>');
+        $('.ui-datepicker-next').html('<i class="icofont-rounded-right"></i>');
+    })
 
 
     // Wellness Block

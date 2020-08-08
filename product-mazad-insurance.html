@@ -77,7 +77,7 @@
                         </div>  
 
                         <!-- add New Ad -->
-                        <a href="new-ad.html" class="addProduct btnBlue"> <img src="images/add.png" alt="icon"> <span> إضافة اعلان </span> </a>
+                        <!-- <a href="new-ad.html" class="addProduct btnBlue"> <img src="images/add.png" alt="icon"> <span> إضافة اعلان </span> </a> -->
 
                         <!-- Before Login  -->
                         <!-- <div class="user dropToggle">
@@ -93,11 +93,13 @@
                         <!-- After Login  -->
                         <div class="user dropToggle">
                             <i class="icofont-simple-down"></i>
-                            <div class="userText"> Hossam Hilal </div>
-                            <div class="userIcon"> <img src="images/user.png" alt="icon" class="img-fluid"> </div>
+                            <div class="userText"> كيان الرقمية  </div>
+                            <div class="userIcon"> <img src="images/binderAvatar.png" alt="icon" class="img-fluid"> </div>
                             <div class="userList dropList">
                                 <a href="profile.html"> حسابي </a>
-                                <a href="profile-ads.html"> اعلاناتى  <span> 5 </span></a>
+                                <a href="profile-ads.html"> المزادات  </a>
+                                <a href="profile-ads.html"> مبالغ التامين </a>
+                                <a href="profile-ads.html"> المفضلة  </a>
                                 <a href="profile-notifications.html"> اشعارات <span> 10 </span></a>
                                 <a href="index.html"> تسجيل الخروج </a>
                             </div> 
@@ -115,16 +117,15 @@
 
         <!-- Page Info  -->
         <div class="pageInfo">
-            <h1> اعلاناتى </h1>
             <h5> مرسيدس جى 63 2016 </h5>
         </div>
     </div>
 
-    <!-- Profile Direct Selling Ad  -->
-    <div class="ProfileMazadPage secPadding">
+    <!-- Mazad Product Page   -->
+    <div class="ProfileMazadPage mazadProductPage secPadding">
         <div class="container">
             <!-- Top Ad Info  -->
-            <div class="product buyProduct profileMazadAd">
+            <div class="product buyProduct mazadProduct2">
                 <div class="row">
                     <div class="col-12 col-sm-9"> 
                         <div class="productBody">
@@ -134,6 +135,10 @@
                                 <h6> <img src="images/distance.png" alt="icon"> km 1234 </h6>
                             </div>
                             <p> تخضع لموافقة المورد - مواصفات خليجية - يتم بيع المعروض علي وضعه الراهن وفي مكانه الحالي - مكيف الهواء - وسائد هوائية - قفل مركزي - نظام تثبيت السرعة - مقاعد كهربائية - نظام هاتف داخلي - مقاعد جلدية - مقود   <a href="product.html">  المزيد </a> </p>
+                            <div class="buyProductFooter">
+                                <div class="recentPrice"> <label> السعر الحالي : 145,100 </label>  <span> (الحد الادنى للمزايدة 1500ريال) </span></div>
+                                <div class="addToFav"> <img src="images/fav-1.png" alt="icon" class="unFav"> <img src="images/fav-2.png" alt="icon" class="fav"> </div>
+                            </div>
                             <div class="mazadProductFooter">
                                 <div class="row">
                                     <div class="col-6 col-sm-3">
@@ -158,13 +163,18 @@
                                 <h4> سعر المزايدة الحالى </h4>
                                 <h5> 2000 ريال </h5>
                             </div>
-                            <div class="profileMazadProdActions">
-                                <a href="profile-mazadAd-edit.html" class="btnBlue"> تعديل </a>
-                                <a href="#" class="btnRed deleteProduct"> حذف </a>
+                            <div class="fullWidthActions">
+                                <a href="product-mazad-2.html" class="btnRed"> مزايدة </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Insurance -->
+            <div class="mazadInsurance">
+                <h3> يرجى العلم انه يتوجب عليك إيداع مبلغ التامين لتتمكن من القيام بعملية المزايدة على المركبات يرجى الضغط على الرابط التالى لتتمكن من إيداع مبلغ التأمين ومواصلة عملية المزايدة </h3>
+                <a href="insurance.html" class="btnBlue"> ايداع تامين المزاد </a>
             </div>
 
             <div class="productDetailsWrapper">
@@ -204,6 +214,10 @@
                                         <span> طباعة </span>
                                     </div>
                                     <div class="action">
+                                        <img src="images/icon-share.png" alt="icon">
+                                        <span> مشاركة </span>
+                                    </div>
+                                    <div class="action">
                                         <img src="images/icon-upload.png" alt="icon">
                                         <span> التقرير والفحص </span>
                                     </div>
@@ -224,6 +238,27 @@
                                     <li> <label> المسافة المقطوعة </label> <span> 150.000 </span> </li>
                                     <li> <label> سعر الشراء المباشر </label> <span> 120.000 </span> </li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="relatedProducts">
+                            <div class="basicHead">
+                                <h3> مركبات اخرى قد تهمك </h3>
+                            </div>
+                            <div class="relatedSlider productPageSlider">
+                                <div class="owl-carousel owl-theme owlRelated">
+                                    <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-2.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
+                                    <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                </div>
                             </div>
                         </div>
                     </div>
