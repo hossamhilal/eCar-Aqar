@@ -20,7 +20,7 @@
 <body>
 
     <!-- Header  -->
-    <div class="header internalHeader adsHeader">
+    <div class="header internalHeader loginHeader">
         <!-- Header Top -->
         <div class="headerTop">
             <div class="container">
@@ -79,7 +79,7 @@
                         <a href="new-ad.html" class="addAd btnBlue"> <img src="images/add.png" alt="icon"> <span> إضافة اعلان </span> </a>
 
                         <!-- Before Login  -->
-                        <!-- <div class="user dropToggle">
+                        <div class="user dropToggle">
                             <i class="icofont-simple-down"></i>
                             <div class="userText"> تسجيل الدخول /جديد </div>
                             <div class="userIcon"> <img src="images/user.png" alt="icon" class="img-fluid"> </div>
@@ -87,10 +87,10 @@
                                 <a href="login.html"> تسجيل الدخول </a>
                                 <a href="login.html"> تسجيل جديد </a>
                             </div> 
-                        </div>   -->
+                        </div>  
                         
                         <!-- After Login  -->
-                        <div class="user dropToggle">
+                        <!-- <div class="user dropToggle">
                             <i class="icofont-simple-down"></i>
                             <div class="userText"> Hossam Hilal </div>
                             <div class="userIcon"> <img src="images/user.png" alt="icon" class="img-fluid"> </div>
@@ -100,7 +100,7 @@
                                 <a href="profile-notifications.html"> اشعارات <span> 10 </span></a>
                                 <a href="index.html"> تسجيل الخروج </a>
                             </div> 
-                        </div>   
+                        </div>    -->
 
                         <!-- Mobile  -->
                         <div class="mobile">
@@ -114,73 +114,125 @@
 
         <!-- Page Info  -->
         <div class="pageInfo">
-            <h1> حسابي  </h1>
+            <h1> تسجيل  </h1>
         </div>
     </div>
 
-    <!-- Profile Avatar  -->
-    <div class="profileAvatar">
-        <div class="profileAvatarBox">
-            <div class="uploadAvatar">
-                <input type="file" accept="image/*">
-                <label> <img src="images/uploadAvatar.png" alt="icon"> </label>
-            </div>
-            <div class="previewBox"> <img src="images/avatar.png" alt="icon"> </div>
-        </div>
-    </div>
-
-    <!-- Profile Info  -->
-    <div class="profileInfo">
+    <!-- Register Page  -->
+    <div class="loginPage secPadding">
         <div class="container">
-            <div class="profileInfoBox">
-                <form action="">
-                    <div class="row">
-                        <div class="col-12 col-sm-6">
-                            <div class="field">
-                                <label> الاسم كاملا </label>
-                                <input type="text" class="form-control" value="Hossam saad Hilal" disabled>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="field">
-                                <label> البريد الالكترونى </label>
-                                <input type="text" class="form-control" value="hello@kian.com.sa" disabled>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="field">
-                                <label> رقم الجوال </label>
-                                <input type="text" class="form-control" value="00966549782553" disabled>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="field">
-                                <label> الدولة </label>
-                                <input type="text" class="form-control" value="السعودية" disabled>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="field">
-                                <label> المدينة </label>
-                                <input type="text" class="form-control" value="الرياض" disabled>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="flexField">
-                                <div class="field fieldTwo">
-                                    <label> رقم المرور </label>
-                                    <input type="password" id="password" class="form-control" value="00966549782553" disabled>
-                                    <span class="showPass"> <img src="images/icon-eye.png" alt="icon"> </span>
-                                </div>
-                                <div class="editProfile"> <img src="images/icon-edit.png" alt="icon"> </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btnBlue"> حفظ </button>
-                        </div>
-                    </div>
-                </form>
+
+            <!-- Login Tabs  -->
+            <div class="loginTabs">
+                <a href="#login" class="loginTab"> تسجيل الدخول </a> 
+                <a href="#signUp" class="loginTab active">  تسجيل جديد  <span> ( عضو مزايد ) </span></a>
             </div>
+
+            <!-- Login Tabs content  -->
+            <div class="LonginTabsContent">
+                <div class="loginContent" id="login">
+                    <!-- Login Form  -->
+                    <div class="loginForm">
+                        <form action="index.html">
+                            <div class="row">
+                                <!-- Field  -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="field">
+                                        <label> <img src="images/icon-user.png" alt="icon"> اسم المستخدم </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Field  -->
+                                <div class="col-12 col-sm-6">
+                                    <div class="field">
+                                        <label> <img src="images/icon-lock.png" alt="icon"> كلمة المرور </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Form Links  -->
+                                <div class="col-12 text-center">
+                                    <div class="formLinks">
+                                        <!-- Custom CheckBox   -->
+                                        <div class="CustomCheckBox">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="CustomCheckBox">
+                                                <label class="custom-control-label" for="CustomCheckBox"> تذكرنى </label>
+                                            </div>
+                                        </div>
+                                        <!-- Form Link  -->
+                                        <div class="formLink"> <a href="forgetPass.html"> نسيت كلمة المرور </a></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btnBlue" type="submit"> دخول </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="loginContent show" id="signUp">
+                    <!-- Login Form  -->
+                    <div class="loginForm fullWidth">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="field">
+                                        <label> <img src="images/icon-user.png" alt="icon"> الاسم الكامل </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="field">
+                                        <label> <img src="images/icon-envelope.png" alt="icon"> البريد الالكترونى </label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="field fieldTwo">
+                                        <label> <img src="images/icon-call.png" alt="icon"> رقم الجوال </label>
+                                        <input type="text" class="form-control">
+                                        <span> 966+ </span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="field">
+                                        <label> <img src="images/icon-user.png" alt="icon"> اسم المستخدم </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="field">
+                                        <label> <img src="images/icon-lock.png" alt="icon"> كلمة المرور  </label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="field">
+                                        <label> <img src="images/icon-lock.png" alt="icon"> تأكيد كلمة المرور  </label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Form Links  -->
+                                <div class="col-12 text-center">
+                                    <div class="formLinks">
+                                        <!-- Custom CheckBox   -->
+                                        <div class="CustomCheckBox">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="agree">
+                                                <label class="custom-control-label" for="agree"> أوافق على الشروط والاحكام </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btnBlue" type="submit"> تسجيل </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 

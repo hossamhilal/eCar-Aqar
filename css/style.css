@@ -600,6 +600,16 @@ button:focus {
     line-height: 30px;
 }
 
+@media screen and (max-width:767px) {
+    .dropList {
+        left: -50px;
+    }
+    
+    .dropList::before {
+        right: calc( 50% + 12px );
+    }    
+}
+
 @media screen and (max-width:768px) {
     .headerTopBox {
         height: 40px;
@@ -715,6 +725,16 @@ button:focus {
 
     .searchPopup .close {
         right: 10px;
+    }
+
+    .dropList {
+        padding: 5px 0;
+    }
+
+    .dropList a {
+        margin: 10px 0;
+        font-size: 11px;
+        padding: 0 7px;
     }
 }
 
@@ -862,7 +882,7 @@ button:focus {
 /*==========================||          Top Ads          ||========================*/
 /*==========================||---------------------------||========================*/
 
-.topAds {
+.topItems {
     padding: 40px 0 0 0;
 }
 
@@ -941,7 +961,7 @@ button:focus {
 }
 
 @media screen and (max-width:768px) {
-    .topAds {
+    .topItems {
         padding: 15px 0 0;
     }
 
@@ -979,11 +999,11 @@ button:focus {
 }
 
 @media (min-width:768px) and (max-width:992px) {
-    .topAds .row {
+    .topItems .row {
         margin: 0 -25px;
     }
 
-    .topAds .col-12 {
+    .topItems .col-12 {
         padding: 0 5px;
     }
 }
@@ -3642,7 +3662,7 @@ button:focus {
     padding: 0 15px;
 }
 
-.field .form-control:disabled, 
+.field .form-control:disabled,
 .field .form-control[readonly] {
     background: var(--white);
     cursor: not-allowed;
@@ -3693,13 +3713,334 @@ button:focus {
     margin: 0;
 }
 
+@media screen and (max-width:768px) {
+    .profileAvatarBox {
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+    }
+    
+    .uploadAvatar label img {
+        max-width: 20px;
+    }
+    
+    .profileAvatar {
+        margin-bottom: 20px;
+    }
+    
+    .profileInfoBox {
+        padding: 15px 15px 0;
+        margin-bottom: 20px;
+    }
+    
+    .profileInfoBox .field input {
+        height: 40px;
+        font-size: 11px;
+    }
+    
+    .editProfile {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .editProfile img {
+        max-width: 20px;
+    }
+    
+    .flexField .field {
+        width: calc( 100% - 45px );
+    }
+    
+    .field .showPass {
+        bottom: 10px;
+    }
+    
+    .showPass img {
+        width: 14px;
+    }
+    
+    .profileInfoBox .btnBlue {
+        margin: 20px auto -20px;
+        height: 40px;
+        font-size: 12px;
+        width: 120px;
+    }
+}
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||        Request a Car      ||========================*/
+/*==========================||---------------------------||========================*/
+
+.requestPageHead {
+    margin-bottom: 50px;
+}
+
+.requestText {
+    background: var(--white);
+    box-shadow: 0px -30px 50px #00000014;
+    border-radius: 29px 29px 0px 0px;
+    padding: 30px 5%;
+    margin-top: -40px;
+    text-align: center;
+}
+
+.requestText h3 {
+    font-size: 15px;
+    line-height: 35px;
+    color: var(--mainColor);
+    font-weight: bold;
+    margin: 0;
+}
+
+.cars h2 {
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--textDark);
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cars h2::before {
+    content: '';
+    width: 20px;
+    height: 55px;
+    background: var(--mainColor);
+    display: inline-block;
+    border-radius: 12px 0px 0px 13px;
+    margin-left: 20px;
+}
+
+.cars h3 {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--textDark);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.carsBox {
+    border: 1px solid #CFCFCF;
+    border-radius: 22px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.car {
+    width: 115px;
+    height: 115px;
+    position: relative;
+    margin: 20px 5px;
+}
+
+.car input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.car label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 5px 5px 15px 5px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.car span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: var(--greyMedium);
+    border: 3px solid #F5F5F4;
+    bottom: -15px;
+    color: var(--text);
+    transition: all .2s ease-in-out;
+}
+
+.car input:checked~label {
+    border-color: var(--mainColor);
+}
+
+.car input:checked~label span {
+    background: var(--mainColor);
+    color: var(--white);
+    border-color: var(--opacityColor);
+}
+
+.months {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0 0 0;
+}
+
+.month {
+    width: calc(25% - 10px);
+    display: flex;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.month label {
+    border: var(--border);
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--text);
+}
+
+.month input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.month input:checked~label {
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+.captcha {
+    padding: 10px 0 0 0;
+}
+
+.captcha img {
+    max-height: 110px;
+    width: 100%;
+}
+
+.carsFields .btnBlue {
+    width: 176px;
+    height: 46px;
+    border: 0;
+    border-radius: 25px;
+    margin: 20px auto;
+}
+
+@media screen and (max-width:768px) {
+    .requestPageHead {
+        margin-bottom: 25px;
+    }
+
+    .requestText {
+        padding: 12px;
+    }
+
+    .requestText h3 {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .cars h2 {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .cars h2::before {
+        width: 10px;
+        height: 40px;
+    }
+
+    .cars h3 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .carsBox {
+        padding: 0 9px 20px;
+        margin-bottom: 12px;
+    }
+
+    .car {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+
+    .months,
+    .captcha {
+        padding: 0;
+    }
+
+    .carsFields .btnBlue {
+        height: 40px;
+        font-size: 12px;
+        width: 120px;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .requestPageHead .container,
+    .cars .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .requestPageHead .container,
+    .cars .container {
+        max-width: 1140px;
+    }
+}
+
+/*==========================||---------------------------||========================*/
+/*==========================||          Volunteer        ||========================*/
+/*==========================||---------------------------||========================*/
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||        Sponsorships       ||========================*/
+/*==========================||---------------------------||========================*/
 
 
 
 /*==========================||---------------------------||========================*/
-/*==========================||          Careers          ||========================*/
+/*==========================||            AR             ||========================*/
 /*==========================||---------------------------||========================*/
 
+
+
+
+/*==========================||---------------------------||========================*/
+/*==========================||            Loader        ||========================*/
+/*==========================||---------------------------||========================*/
 
 
 /*==========================||---------------------------||========================*/

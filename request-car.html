@@ -20,7 +20,7 @@
 <body>
 
     <!-- Header  -->
-    <div class="header internalHeader adsHeader">
+    <div class="header internalHeader loginHeader">
         <!-- Header Top -->
         <div class="headerTop">
             <div class="container">
@@ -114,73 +114,271 @@
 
         <!-- Page Info  -->
         <div class="pageInfo">
-            <h1> حسابي  </h1>
+            <h1> طلب سيارة  </h1>
         </div>
     </div>
 
-    <!-- Profile Avatar  -->
-    <div class="profileAvatar">
-        <div class="profileAvatarBox">
-            <div class="uploadAvatar">
-                <input type="file" accept="image/*">
-                <label> <img src="images/uploadAvatar.png" alt="icon"> </label>
-            </div>
-            <div class="previewBox"> <img src="images/avatar.png" alt="icon"> </div>
-        </div>
-    </div>
-
-    <!-- Profile Info  -->
-    <div class="profileInfo">
+    <!-- Request Car Head  -->
+    <div class="requestPageHead">
         <div class="container">
-            <div class="profileInfoBox">
-                <form action="">
+            <div class="requestText">
+                <h3> ذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cars  -->
+    <div class="cars">
+        <div class="container">
+            <form action="">
+                <h2> السيارات التي تناسب ميزانيتك </h2>
+                <h3> ماركة السيارة </h3>
+                <div class="carsBox">           
+                    <div class="car">
+                        <input type="checkbox" checked>
+                        <label>
+                            <img src="images/car-1.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-2.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-3.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-4.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-5.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-6.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-7.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-4.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-5.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-6.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-7.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-1.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-2.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-3.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-4.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-1.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-2.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-3.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-4.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-5.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-6.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-7.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-4.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                    <div class="car">
+                        <input type="checkbox">
+                        <label>
+                            <img src="images/car-5.png" alt="car" class="img-fluid">
+                            <span> <i class="icofont-check-alt"></i> </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="carsFields">
                     <div class="row">
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="field">
-                                <label> الاسم كاملا </label>
-                                <input type="text" class="form-control" value="Hossam saad Hilal" disabled>
+                                <label> الاسم </label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="field">
+                                <label> رقم الهاتف </label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="field">
                                 <label> البريد الالكترونى </label>
-                                <input type="text" class="form-control" value="hello@kian.com.sa" disabled>
+                                <input type="email" class="form-control">
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="field">
-                                <label> رقم الجوال </label>
-                                <input type="text" class="form-control" value="00966549782553" disabled>
+                                <label> صافى الدخل الشهرى </label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="field">
-                                <label> الدولة </label>
-                                <input type="text" class="form-control" value="السعودية" disabled>
+                                <label> الدفعة الاولى </label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 col-md-4">
                             <div class="field">
-                                <label> المدينة </label>
-                                <input type="text" class="form-control" value="الرياض" disabled>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="flexField">
-                                <div class="field fieldTwo">
-                                    <label> رقم المرور </label>
-                                    <input type="password" id="password" class="form-control" value="00966549782553" disabled>
-                                    <span class="showPass"> <img src="images/icon-eye.png" alt="icon"> </span>
+                                <label> نوع السيارة </label>
+                                <div class="customSelect">
+                                    <select>
+                                        <option value="1"> شخصي </option>
+                                        <option value="2"> عمل  </option>
+                                        <option value="3"> نقل </option>
+                                        <option value="4"> شخصي </option>
+                                        <option value="5"> شخصي </option>
+                                    </select>
                                 </div>
-                                <div class="editProfile"> <img src="images/icon-edit.png" alt="icon"> </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="field">
+                                <label> مدة عقد التمويل </label>
+                                <div class="months">
+                                    <div class="month"> <input type="radio" name="month"> <label> 06 </label> </div>
+                                    <div class="month"> <input type="radio" name="month"> <label> 12 </label> </div>
+                                    <div class="month"> <input type="radio" name="month"> <label> 18 </label> </div>
+                                    <div class="month"> <input type="radio" name="month"> <label> 24 </label> </div>
+                                    <div class="month"> <input type="radio" name="month"> <label> 30 </label> </div>
+                                    <div class="month"> <input type="radio" name="month"> <label> 36 </label> </div>
+                                    <div class="month"> <input type="radio" name="month"> <label> 42 </label> </div>
+                                    <div class="month"> <input type="radio" name="month"> <label> 48 </label> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="field">
+                                <label> مدة عقد التمويل </label>
+                                <div class="captcha">
+                                    <img src="images/captcha.png" alt="captcha" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btnBlue"> حفظ </button>
+                            <button class="btnBlue" type="submit"> ارسال </button>
                         </div>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
 
