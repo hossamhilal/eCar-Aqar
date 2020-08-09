@@ -2,13 +2,13 @@
 (function($) {
     "use strict";
 
-    // $(window).on('load', function(){
-    //     $('body').addClass('stopScroll');
-    //     $('.loader').fadeOut(500, function () {
-    //         $(this).remove();
-    //         $('body').removeClass('stopScroll');
-    //     }); 
-    // });
+    $(window).on('load', function(){
+        $('body').addClass('stopScroll');
+        $('.loader').fadeOut(500, function () {
+            $(this).remove();
+            $('body').removeClass('stopScroll');
+        }); 
+    });
 
     // OPEN SIDE  MENU 
     $('.menuBtn').on('click', function(){
@@ -431,34 +431,44 @@
     })
 
 
-    // Wellness Block
-    // $('.openDetails').on('click' , function(){
-    //     $(this).parents('.hover').addClass('open');
-    // });
+    // Mazad Count
+    $('.counterBtn').on('click' , function(){
+        let startValue = parseInt($('.countNumber').text());
+        let CountBox = $('.countNumber');
+        let currentNumber = 100 ;
+        
+        if ($(this).hasClass('plusBtn')) {
+            CountBox.text(startValue + currentNumber);
+        } else {
+            CountBox.text(startValue - currentNumber);
+        }
+    });
 
-    // $('.closeDetails').on('click' , function(){
-    //     $(this).parents('.hover').removeClass('open');
-    // });
+    // Branches Tab
+    $('.branchTab').on('click' , function(e){
+        e.preventDefault();
 
+        $('.branchTab').removeClass('active');
+        $(this).addClass('active');
+        
+        var itemId = $(this).attr("href"); 
+        $('.tabContent').removeClass('show'); 
+        $(itemId).addClass('show');
+    });
 
-    // Upload File 
-    // $('.uploadFile').on('change', function(e) {
-    //     let fileName = e.target.value.split( '\\' ).pop();
-    //     console.log(fileName);
-    //     let files = $(this).parent('.uploadBox').prev('.uploadedFiles');
-    //     files.append(
-    //         '<div class="file">' +
-    //             '<h3 class="fileName">' + fileName  + '</h3>' +
-    //             '<span class="deleteFile"> <i class="icofont-ui-delete"></i> </span>' +
-    //         '</div>'
-    //     );               
-    // });
+    // Bids Tab
+    $('.bidTab').on('click' , function(e){
+        e.preventDefault();
 
-    // Delete File
-    // $(document).on('click','.deleteFile' , function(){
-    //     $(this).parent('.file').remove();
-    // });
+        $('.bidTab').removeClass('active');
+        $(this).addClass('active');
+        
+        var itemId = $(this).attr("href"); 
+        $('.tabContent').removeClass('show'); 
+        $(itemId).addClass('show');
+    });
 
+    
     // iniat WOW Js
     new WOW().init();
    

@@ -20,6 +20,15 @@
 
 <body>
 
+    <!-- Loader  -->
+    <div class="loader">
+        <div class="loaderBox">
+            <div class="carbody"> <img src="images/loader-car.png" alt="car" class="img-fluid"> </div>
+            <div class="weel weel1"> <img src="images/loader-weel.png" alt="car" class="img-fluid"> </div>
+            <div class="weel weel2"> <img src="images/loader-weel.png"src="images/loader-car.png" alt="car" class="img-fluid"> </div>
+        </div>
+    </div>
+
     <!-- Header  -->
     <div class="header internalHeader adsHeader">
         <!-- Header Top -->
@@ -97,9 +106,9 @@
                             <div class="userIcon"> <img src="images/binderAvatar.png" alt="icon" class="img-fluid"> </div>
                             <div class="userList dropList">
                                 <a href="profile.html"> حسابي </a>
-                                <a href="profile-ads.html"> المزادات  </a>
-                                <a href="profile-ads.html"> مبالغ التامين </a>
-                                <a href="profile-ads.html"> المفضلة  </a>
+                                <a href="profile-bids.html"> المزادات  </a>
+                                <a href="insurance.html"> مبالغ التامين </a>
+                                <a href="profile-favourite.html"> المفضلة  </a>
                                 <a href="profile-notifications.html"> اشعارات <span> 10 </span></a>
                                 <a href="index.html"> تسجيل الخروج </a>
                             </div> 
@@ -174,7 +183,7 @@
             <!-- Insurance -->
             <div class="mazadInsurance">
                 <h3> يرجى العلم انه يتوجب عليك إيداع مبلغ التامين لتتمكن من القيام بعملية المزايدة على المركبات يرجى الضغط على الرابط التالى لتتمكن من إيداع مبلغ التأمين ومواصلة عملية المزايدة </h3>
-                <a href="insurance.html" class="btnBlue"> ايداع تامين المزاد </a>
+                <a href="#" class="btnBlue" type="button" data-toggle="modal" data-target="#insuranceModal"> ايداع تامين المزاد </a>
             </div>
 
             <div class="productDetailsWrapper">
@@ -248,16 +257,76 @@
                             </div>
                             <div class="relatedSlider productPageSlider">
                                 <div class="owl-carousel owl-theme owlRelated">
-                                    <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-2.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-1.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-3.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-4.png" alt="Image"> </div>
-                                    <div class="item"> <img src="images/adImage-5.png" alt="Image"> </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-1.png" alt="Image"> 
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div>
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-2.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-3.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-4.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-5.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-3.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-1.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-3.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-4.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
+                                    <div class="item"> 
+                                        <img src="images/adImage-5.png" alt="Image">
+                                        <div class="relatedHover">
+                                            <h5> فيرارى موديل 2012 </h5>
+                                            <h6> ‏30.000 ريال </h6>
+                                        </div> 
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -406,6 +475,118 @@
             <p> تصميم وبرمجة <a href="#"> كيان الرقمية </a> </p>
         </div>
     </div>
+
+    <!-- Insurance Modal  -->
+    <div class="modal fade customModal insuranceModal" id="insuranceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="customModalContent modal-content">
+                <div class="closeModal" data-dismiss="modal" aria-label="Close"> <i class="icofont-close-circled"></i> </div>
+                <div class="customModalBody">
+                    <div class="insuranceBox">
+
+                        <div class="loginTabs">
+                            <a href="#tab1" class="loginTab active"> تحويل بنكى </a> 
+                            <a href="#tab2" class="loginTab"> بطاقة الكترونية </a>
+                        </div>
+        
+                        <div class="tabsContent">
+                            <div class="tabContent show" id="tab1"> 
+                                <div class="bankTransfer">
+                                    <div class="bankTransferHead">
+                                        <h3> الرجاء ملاحظة ان الحد الأدنى للتامين المطلوب هو 100 ريال </h3>
+                                    </div>
+                                    <div class="bank">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4">
+                                                <div class="bankBlock"> 
+                                                    <h4> اسم الحساب </h4>
+                                                    <h5> E CAR & Aqar </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <div class="bankBlock"> 
+                                                    <h4> اسم البنك </h4>
+                                                    <h5> مصرف الراجحى الاسلامى </h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <div class="bankBlock"> 
+                                                    <h4> رقم الحساب </h4>
+                                                    <h5> 1025469854752145</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="transferForm">
+                                        <p> بعد استكمال عملية الإيداع يرجى ارسال بيانات الإيداع عن طريق النموذج التالى او ارسال إيصال التحويل على البريد الالكترونى وسيتم مراجعه الطلب واظهارة في الموقع companymail@gmail.com</p>
+                                        <form action="product-mazad-live.html">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-md-4">
+                                                    <div class="field">
+                                                        <label> تاريخ التحويل </label>
+                                                        <div class="uploadBillBox">
+                                                            <div class="uploadBill"> 
+                                                                <input type="file">
+                                                                <label> <img src="images/icon-cam.png" alt="icon"></label>
+                                                            </div>
+                                                            <div class="billName"> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4">
+                                                    <div class="field fieldTwo">
+                                                        <label> تاريخ التحويل </label>
+                                                        <input type="text" class="form-control datePicker">
+                                                        <span> <img src="images/icon-calender.png" alt="icon"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4">
+                                                    <div class="field fieldTwo">
+                                                        <label> قيمة التحويل </label>
+                                                        <input type="text" class="form-control">
+                                                        <span> <img src="images/icon-money.png" alt="icon"> </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button class="btnBlue" type="submit"> ارسال </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabContent" id="tab2"> 
+                                <div class="bankTransfer onlinePayment">
+                                    <div class="bankTransferHead">
+                                        <h3> الرجاء ملاحظة ان الحد الأدنى للتامين المطلوب هو 100 ريال يتم قبول بطاقات الفيزا والماستر كارد وسداد فقط </h3>
+                                    </div>
+                                    <div class="paymentCards">
+                                        <div class="paymentCard"> <img src="images/card-1.png" alt="card" class="img-fluid"> </div>
+                                        <div class="paymentCard"> <img src="images/card-2.png" alt="card" class="img-fluid"> </div>
+                                        <div class="paymentCard"> <img src="images/card-3.png" alt="card" class="img-fluid"> </div>
+                                    </div>
+                                    <div class="transferForm">
+                                        <p> بعد استكمال عملية الإيداع يرجى ارسال بيانات الإيداع عن طريق النموذج التالى او ارسال إيصال التحويل على البريد الالكترونى وسيتم مراجعه الطلب واظهارة في الموقع companymail@gmail.com</p>
+                                        <form action="product-mazad-live.html">
+                                            <div class="onlineAmout">
+                                                <div class="field fieldTwo">
+                                                    <label> مبلغ التامين </label>
+                                                    <input type="text" class="form-control">
+                                                    <span> <img src="images/icon-money.png" alt="icon"> </span>
+                                                </div>
+                                                <button class="btnBlue" type="submit"> الدفع الكترونيا </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
